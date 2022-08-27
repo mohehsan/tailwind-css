@@ -22,6 +22,10 @@ export interface CardContentProps {
 	children: ReactNode;
 }
 
+export interface CardFooterProps {
+	children: ReactNode;
+}
+
 export interface IconProps {
 	icon?: JSX.Element;
 	title: string;

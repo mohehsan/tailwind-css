@@ -1,6 +1,6 @@
 import React, { ReactElement, ReactNode } from "react";
 import { NextPage } from "next";
-import { Hero, Section } from "components/Fawwaz/Sections";
+import { Hero, Section, Testimonial } from "components/Fawwaz/Sections";
 import SEOMarketingSVG from "../../components/assets/svg/SEOMarketingSVG";
 import Logo from "components/Fawwaz/Logo";
 import logo from "../../components/assets/logo/logo1.png";
@@ -189,7 +189,7 @@ const Page: NextPage = () => {
 			<Section className="pt-16">
 				<div className="flex py-2 space-y-16 justify-center flex-col">
 					<h1 className="flex text-4xl text-justify">Turn followers into customers with Muscled’s social media advertising</h1>
-					<div className="text-justify text-3xl">
+					<div className="text-justify text-xl">
 						<p className="mb-20">
 							Every digital marketing strategy has to have social media, that means yours too.
 						</p>
@@ -210,6 +210,11 @@ const Page: NextPage = () => {
 						</p>
 					</div>
 				</div>
+			</Section>
+
+
+			<Section>
+				<Testimonial/>
 			</Section>
 		</div>
 	);

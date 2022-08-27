@@ -4,7 +4,13 @@ import { Hero, Section, Testimonial } from "components/Fawwaz/Sections";
 import SEOMarketingSVG from "../../components/assets/svg/SEOMarketingSVG";
 import Logo from "components/Fawwaz/Logo";
 import logo from "../../components/assets/logo/logo1.png";
-import { Card, CardContent, CardFooter, CardHeader, IconItem } from "components/Fawwaz/Card";
+import {
+	Card,
+	CardContent,
+	CardFooter,
+	CardHeader,
+	IconItem,
+} from "components/Fawwaz/Card";
 
 import { FaCheckCircle, FaChevronRight } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
@@ -20,21 +26,21 @@ const pricingCards = [
 		content: [
 			{
 				icon: <FaCheckCircle />,
-				title: "Up to 5-10 ad campaigns"
+				title: "Up to 5-10 ad campaigns",
 			},
 			{
 				icon: <FaCheckCircle />,
-				title: "Up to 20-40 unique ads"
+				title: "Up to 20-40 unique ads",
 			},
 			{
 				icon: <FaCheckCircle />,
-				title: "Advanced AI tracking"
+				title: "Advanced AI tracking",
 			},
 			{
 				icon: <FaCheckCircle />,
-				title: "$10,000-$20,000 / mo. monthly ad spend"
-			}
-		]
+				title: "$10,000-$20,000 / mo. monthly ad spend",
+			},
+		],
 	},
 	{
 		rate: "10,000",
@@ -47,21 +53,21 @@ const pricingCards = [
 		content: [
 			{
 				icon: <FaCheckCircle />,
-				title: "Up to 5-20 ad campaigns"
+				title: "Up to 5-20 ad campaigns",
 			},
 			{
 				icon: <FaCheckCircle />,
-				title: "Up to 20-40 unique ads"
+				title: "Up to 20-40 unique ads",
 			},
 			{
 				icon: <FaCheckCircle />,
-				title: "Dedicated account manager"
+				title: "Dedicated account manager",
 			},
 			{
 				icon: <FaCheckCircle />,
-				title: "$100,000-$500,000 / mo. monthly ad spend"
-			}
-		]
+				title: "$100,000-$500,000 / mo. monthly ad spend",
+			},
+		],
 	},
 	{
 		rate: "65,000",
@@ -75,39 +81,40 @@ const pricingCards = [
 		content: [
 			{
 				icon: <FaCheckCircle />,
-				title: "Up to 30-50 ad campaigns"
+				title: "Up to 30-50 ad campaigns",
 			},
 			{
 				icon: <FaCheckCircle />,
-				title: "Up to 120-200 unique ads"
+				title: "Up to 120-200 unique ads",
 			},
 			{
 				icon: <FaCheckCircle />,
-				title: "Custom reporting dashboard"
+				title: "Custom reporting dashboard",
 			},
 			{
 				icon: <FaCheckCircle />,
-				title: "$1M-$1.5M / mo. monthly ad spend"
-			}
+				title: "$1M-$1.5M / mo. monthly ad spend",
+			},
 		],
-
 	},
 ];
 
-const list = [
-	{ icon: true, text: "15 hours quarterly" },
-	{ icon: true, text: "$1,800 monthly investment" },
-	{ icon: true, text: "Best for websites under 250 pages" },
-];
-const list2 = [
-	{ icon: true, text: "25 hours quarterly" },
-	{ icon: true, text: "$3,600 monthly investment" },
-	{ icon: true, text: "Best for websites under 250 pages" },
-];
-const list3 = [
-	{ icon: true, text: "35 hours quarterly" },
-	{ icon: true, text: "$4,800 monthly investment" },
-	{ icon: true, text: "Best for websites under 250 pages" },
+const socialCards = [
+	{
+		title: "Ecommerce Social Media Advertising",
+		description:
+			"Drive traffic to your ecommerce store and start selling more online with social media ads.",
+	},
+	{
+		title: "Enterprise Social Media Advertising",
+		description:
+			"Turbocharge enterprise sales with social ads (for ad budgets above $10,000 per month).",
+	},
+	{
+		title: "D2C Social Media Advertising",
+		description:
+			"Attract, engage, and sell with custom social media ads for your business.",
+	},
 ];
 
 const Page: NextPage = () => {
@@ -159,15 +166,19 @@ const Page: NextPage = () => {
 								</div>
 							</CardHeader>
 							<CardContent className="space-y-9">
-								{
-									pricing.content.map((content) => (
-										<IconItem icon={content.icon} title={content.title} className="mt-4" />
-									))
-								}
+								{pricing.content.map((content) => (
+									<IconItem
+										icon={content.icon}
+										title={content.title}
+										className="mt-4"
+									/>
+								))}
 							</CardContent>
 							<div className="px-4 py-10 mt-4 flex items-center justify-center flex-col">
 								<p className="border-t border-[#000] w-full mt-1 mb-10 text-center" />
-								<p className="mb-10">$3,125 INITIAL INVESTMENT</p>
+								<p className="mb-10">
+									$3,125 INITIAL INVESTMENT
+								</p>
 								<Button
 									bgColor="bg-[#000]"
 									textColor="text-white"
@@ -183,47 +194,95 @@ const Page: NextPage = () => {
 
 			<Section className="flex flex-wrap justify-center pt-16">
 				<div className="flex py-2 space-y-9">
-					<p className="flex text-4xl font-medium text-sky-500">See Full Deliverables<BsChevronRight className="ml-10" /></p>
+					<p className="flex text-4xl font-medium text-sky-500">
+						See Full Deliverables
+						<BsChevronRight className="ml-10" />
+					</p>
 				</div>
 			</Section>
 
 			<Section className="pt-16">
 				<div className="flex py-2 space-y-16 justify-center flex-col">
-					<h1 className="text-4xl text-justify">Turn followers into customers with Muscled’s social media advertising</h1>
+					<h1 className="text-4xl text-justify">
+						Turn followers into customers with Muscled’s social
+						media advertising
+					</h1>
 					<div className="text-justify text-xl">
 						<p className="mb-14">
-							Every digital marketing strategy has to have social media, that means yours too.
+							Every digital marketing strategy has to have social
+							media, that means yours too.
 						</p>
 						<p className="mb-6">
-							With platforms like Facebook, LinkedIn, Twitter, Instagram, and even TikTok, your business can go to wherever it needs to, whether to boost your recruitment efforts, sales ventures, or customer loyalty incentives.
+							With platforms like Facebook, LinkedIn, Twitter,
+							Instagram, and even TikTok, your business can go to
+							wherever it needs to, whether to boost your
+							recruitment efforts, sales ventures, or customer
+							loyalty incentives.
 						</p>
 						<p className="mb-6">
-							While <a href="" className="text-sky-400">social media marketing</a> does help reach these goals, advertising kickstarts your efforts by adding more OOMPH to your company’s presence in social media platforms. With social media ads that hit the spot in targeting, messaging, and bidding, your enterprise business can get phenomenal results from social media.
+							While{" "}
+							<a href="" className="text-sky-400">
+								social media marketing
+							</a>{" "}
+							does help reach these goals, advertising kickstarts
+							your efforts by adding more OOMPH to your company’s
+							presence in social media platforms. With social
+							media ads that hit the spot in targeting, messaging,
+							and bidding, your enterprise business can get
+							phenomenal results from social media.
 						</p>
 						<p className="mb-6">
-							At Muscled, our social media management team specializes in corporate-level social media advertising.
+							At Muscled, our social media management team
+							specializes in corporate-level social media
+							advertising.
 						</p>
 						<p className="mb-14">
-							When you partner with our own social media experts, you get a complete social media advertising package. From curating your strategy to creating your ads to managing your campaigns, we cover everything in this aspect. Plus, we provide you with reports that are convenient and accurate.
+							When you partner with our own social media experts,
+							you get a complete social media advertising package.
+							From curating your strategy to creating your ads to
+							managing your campaigns, we cover everything in this
+							aspect. Plus, we provide you with reports that are
+							convenient and accurate.
 						</p>
 						<p>
-							If you want to learn how our Meta Business Partner agency can help bring more power to your brand — and why 91% of brands make us their long-term partner — <a href="" className="text-sky-400">contact us online</a> or call us at ######## to speak with an experienced strategist!
+							If you want to learn how our Meta Business Partner
+							agency can help bring more power to your brand — and
+							why 91% of brands make us their long-term partner —{" "}
+							<a href="" className="text-sky-400">
+								contact us online
+							</a>{" "}
+							or call us at ######## to speak with an experienced
+							strategist!
 						</p>
 					</div>
 				</div>
 			</Section>
 
 			<div className="pt-32">
-				<Testimonial/>
+				<Testimonial />
 			</div>
 
 			<Section className="pt-32">
 				<div className=" py-2 space-y-16 justify-center">
-					<h1 className="flex text-4xl text-justify">Reach out to networks that matter to your business, connect with your targets.</h1>
+					<h1 className="flex text-4xl text-justify">
+						Reach out to networks that matter to your business,
+						connect with your targets.
+					</h1>
 					<div className="text-justify text-xl">
-						<p className="mb-5">Platforms like Youtube, Facebook, Instagram and Twitter gives your business the opportunity to reach hundreds of millions of users, as well as powerful targeting options that help your business reach out to its target audience and have amazing returns on its ad spend.</p>
-						<p className="mb-5">With Muscled, your company gets has the chance to take advantage of all these platforms because we cover:</p>
-						<ul className="list-disc ml-5 mb-5">
+						<p className="mb-5">
+							Platforms like Youtube, Facebook, Instagram and
+							Twitter gives your business the opportunity to reach
+							hundreds of millions of users, as well as powerful
+							targeting options that help your business reach out
+							to its target audience and have amazing returns on
+							its ad spend.
+						</p>
+						<p className="mb-5">
+							With Muscled, your company gets has the chance to
+							take advantage of all these platforms because we
+							cover:
+						</p>
+						<ul className="list-disc pl-8 mb-5">
 							<li>Facebook</li>
 							<li>Instagram</li>
 							<li>Twitter</li>
@@ -232,86 +291,67 @@ const Page: NextPage = () => {
 							<li>YouTube</li>
 							<li>LinkedIn</li>
 						</ul>
-						<p>While our enterprise social media advertising service plans include a recommended number of networks, you have the choice to advertise on however many you prefer, like four platforms instead of two.</p>
+						<p>
+							While our enterprise social media advertising
+							service plans include a recommended number of
+							networks, you have the choice to advertise on
+							however many you prefer, like four platforms instead
+							of two.
+						</p>
 					</div>
 				</div>
 			</Section>
 
 			<Section className="pt-36">
 				<div className="space-y-16 justify-center">
-					<h1 className="text-4xl text-center">MUSCLED Enterprise Social Media Advertising Pricing</h1>
+					<h1 className="text-4xl text-center">
+						MUSCLED Enterprise Social Media Advertising Pricing
+					</h1>
+				</div>
+			</Section>
+
+			<Section>{/* table section */}</Section>
+
+			<Section className="flex flex-wrap pt-20">
+				<div className="justify-center">
+					<h1 className="mb-14 text-4xl text-center">
+						Social media advertising services for every business
+					</h1>
+					<p className="mb-7 text-xl text-center">
+						MUSCLED offers custom social ad plans for ecommerce
+						stores, enterprises, and direct to consumer (D2C)
+						brands.
+					</p>
+					<p className="text-xl text-center">
+						Check out the plans below, or give us a call at
+						888-256-9448 to learn more!{" "}
+					</p>
+				</div>
+			</Section>
+
+			<Section className="pt-20">
+				<div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+					{socialCards.map((content) => (
+						<div className="bg-bold-red w-auto pt-5 pb-10 px-5 flex flex-wrap flex-col justify-around">
+							<div className="px-6 text-accent-white">
+								<p className="mt-8 text-3xl">{content.title}</p>
+								<p className="my-5 text-xl">
+									{content.description}
+								</p>
+							</div>
+							<Button
+								bgColor="bg-[#000]"
+								textColor="text-white"
+								className="mx-auto self-end">
+								LEARN MORE
+							</Button>
+						</div>
+					))}
 				</div>
 			</Section>
 
 			<Section>
-				{/* table section */}
-			</Section>
-
-			<Section className="flex flex-wrap pt-20">
-				<div className="justify-center">
-					<h1 className="mb-14 text-4xl text-center">Social media advertising services for every business</h1>
-					<p className="mb-7 text-xl text-center">MUSCLED offers custom social ad plans for ecommerce stores, enterprises, and direct to consumer (D2C) brands.</p>
-					<p className="text-xl text-center">Check out the plans below, or give us a call at 888-256-9448 to learn more! </p>
-				</div>
-			</Section>
-
-			<Section className="pt-20" >
-				<div className="flex flex-wrap justify-center">
-					{/* A */}
-					<div className="box-border h-90 w-80 px-3 py-3">
-						<div className="flex items-center bg-red-700 flex-col py-3 px-3">
-							<div className="px-6 text-accent-white">
-								<p className="mt-8 text-3xl">Ecommerce Social Media Advertising</p>
-								<p className="my-5 text-xl">Drive traffic to your ecommerce store and start selling more online with social media ads.</p>
-							</div>
-							<Button
-								bgColor="bg-[#000]"
-								textColor="text-white"
-								className="mt-7 text-[-0.8em]">
-								LEARN MORE					
-							</Button>
-						</div>
-					</div>
-					
-					{/* B */}
-					<div className="box-border h-90 w-80 px-3 py-3">
-						<div className="flex items-center bg-red-700 flex-col py-3 px-3">
-							<div className="px-6 text-accent-white">
-								<p className="mt-8 text-3xl">Enterprise Social Media Advertising</p>
-								<p className="my-5 text-xl">Turbocharge enterprise sales with social ads (for ad budgets above $10,000 per month).</p>
-							</div>
-							<Button
-								bgColor="bg-[#000]"
-								textColor="text-white"
-								className="mt-7 text-[-0.8em]">
-								LEARN MORE					
-							</Button>
-						</div>
-					</div>
-					
-					{/* C */}
-					<div className="box-border h-90 w-80 px-3 py-3">
-						<div className="flex items-center bg-red-700 flex-col py-[14px] px-3">
-							<div className="px-6 text-accent-white">
-								<p className="mt-8 text-3xl">D2C Social Media Advertising</p>
-								<p className="my-5 text-xl">Attract, engage, and sell with custom social media ads for your business.</p>
-								<br></br>
-							</div>
-							<Button
-								bgColor="bg-[#000]"
-								textColor="text-white"
-								className="mt-7 text-[-0.8em]">
-								LEARN MORE					
-							</Button>
-						</div>
-					</div>
-				</div>	
-			</Section>
-
-			<Section >
-				<div>
-
-				</div>
+				<div></div>
 			</Section>
 		</div>
 	);

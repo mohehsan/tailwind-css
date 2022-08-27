@@ -23,7 +23,7 @@ export interface CardContentProps {
 }
 
 export interface CardFooterProps {
-	children: ReactNode;
+	children?: ReactNode;
 }
 
 export interface IconProps {

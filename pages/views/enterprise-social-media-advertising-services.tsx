@@ -188,21 +188,21 @@ const Page: NextPage = () => {
 
 			<Section className="pt-16">
 				<div className="flex py-2 space-y-16 justify-center flex-col">
-					<h1 className="flex text-4xl text-justify">Turn followers into customers with Muscled’s social media advertising</h1>
+					<h1 className="text-4xl text-justify">Turn followers into customers with Muscled’s social media advertising</h1>
 					<div className="text-justify text-xl">
-						<p className="mb-20">
+						<p className="mb-14">
 							Every digital marketing strategy has to have social media, that means yours too.
 						</p>
-						<p className="mb-10">
+						<p className="mb-6">
 							With platforms like Facebook, LinkedIn, Twitter, Instagram, and even TikTok, your business can go to wherever it needs to, whether to boost your recruitment efforts, sales ventures, or customer loyalty incentives.
 						</p>
-						<p className="mb-10">
+						<p className="mb-6">
 							While <a href="" className="text-sky-400">social media marketing</a> does help reach these goals, advertising kickstarts your efforts by adding more OOMPH to your company’s presence in social media platforms. With social media ads that hit the spot in targeting, messaging, and bidding, your enterprise business can get phenomenal results from social media.
 						</p>
-						<p className="mb-10">
+						<p className="mb-6">
 							At Muscled, our social media management team specializes in corporate-level social media advertising.
 						</p>
-						<p className="mb-20">
+						<p className="mb-14">
 							When you partner with our own social media experts, you get a complete social media advertising package. From curating your strategy to creating your ads to managing your campaigns, we cover everything in this aspect. Plus, we provide you with reports that are convenient and accurate.
 						</p>
 						<p>
@@ -212,9 +212,102 @@ const Page: NextPage = () => {
 				</div>
 			</Section>
 
+			<div className="pt-32">
+				<Testimonial/>
+			</div>
+
+			<Section className="pt-32">
+				<div className=" py-2 space-y-16 justify-center">
+					<h1 className="flex text-4xl text-justify">Reach out to networks that matter to your business, connect with your targets.</h1>
+					<div className="text-justify text-xl">
+						<p className="mb-5">Platforms like Youtube, Facebook, Instagram and Twitter gives your business the opportunity to reach hundreds of millions of users, as well as powerful targeting options that help your business reach out to its target audience and have amazing returns on its ad spend.</p>
+						<p className="mb-5">With Muscled, your company gets has the chance to take advantage of all these platforms because we cover:</p>
+						<ul className="list-disc ml-5 mb-5">
+							<li>Facebook</li>
+							<li>Instagram</li>
+							<li>Twitter</li>
+							<li>Pinterest</li>
+							<li>Snapchat</li>
+							<li>YouTube</li>
+							<li>LinkedIn</li>
+						</ul>
+						<p>While our enterprise social media advertising service plans include a recommended number of networks, you have the choice to advertise on however many you prefer, like four platforms instead of two.</p>
+					</div>
+				</div>
+			</Section>
+
+			<Section className="pt-36">
+				<div className="space-y-16 justify-center">
+					<h1 className="text-4xl text-center">MUSCLED Enterprise Social Media Advertising Pricing</h1>
+				</div>
+			</Section>
 
 			<Section>
-				<Testimonial/>
+				{/* table section */}
+			</Section>
+
+			<Section className="pt-20">
+				<div className="justify-center">
+					<h1 className="mb-14 text-4xl text-center">Social media advertising services for every business</h1>
+					<p className="mb-7 text-xl text-center">MUSCLED offers custom social ad plans for ecommerce stores, enterprises, and direct to consumer (D2C) brands.</p>
+					<p className="text-xl text-center">Check out the plans below, or give us a call at 888-256-9448 to learn more! </p>
+				</div>
+			</Section>
+
+			<Section className="flex pt-20" >
+				{/* A */}
+				<div className="box-border h-[380px] w-[410px] ml-[25px] mr-10 bg-red-700 flex items-center flex-col">
+					<div className="px-6">
+						<p className="mt-8 text-3xl">Ecommerce Social Media Advertising</p>
+						<p className="my-5 text-xl">Drive traffic to your ecommerce store and start selling more online with social media ads.</p>
+					</div>
+					<div>
+						<Button
+							bgColor="bg-[#000]"
+							textColor="text-white"
+							className="mt-7 text-[-0.8em]">
+							LEARN MORE					
+						</Button>
+					</div>
+				</div>
+				
+				{/* B */}
+				<div className="box-border h-[380px] w-[410px] mx-10 mb-10 bg-red-700 flex items-center flex-col">
+				<div className="px-6">
+						<p className="mt-8 text-3xl">Enterprise Social Media Advertising</p>
+						<p className="my-5 text-xl">Turbocharge enterprise sales with social ads (for ad budgets above $10,000 per month).</p>
+					</div>
+					<div>
+						<Button
+							bgColor="bg-[#000]"
+							textColor="text-white"
+							className="mt-7 text-[-0.8em]">
+							LEARN MORE					
+						</Button>
+					</div>
+				</div>
+				
+				{/* C */}
+				<div className="box-border h-[380px] w-[410px] ml-10 mr-[25px] mb-10 bg-red-700 flex items-center flex-col">
+				<div className="px-6">
+						<p className="mt-8 text-3xl">D2C Social Media Advertising</p>
+						<p className="my-5 text-xl">Attract, engage, and sell with custom social media ads for your business.</p>
+					</div>
+					<div>
+						<Button
+							bgColor="bg-[#000]"
+							textColor="text-white"
+							className="mt-14 text-[-0.8em]">
+							LEARN MORE					
+						</Button>
+					</div>
+				</div>
+			</Section>
+
+			<Section >
+				<div>
+
+				</div>
 			</Section>
 		</div>
 	);

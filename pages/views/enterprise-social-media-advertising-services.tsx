@@ -6,8 +6,10 @@ import Logo from "components/Fawwaz/Logo";
 import logo from "../../components/assets/logo/logo1.png";
 import { Card, CardContent, CardFooter, CardHeader, IconItem } from "components/Fawwaz/Card";
 
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle, FaChevronRight } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
+import Button from "components/Fawwaz/Button";
+import { BsChevronRight } from "react-icons/bs";
 
 const pricingCards = [
 	{
@@ -87,7 +89,8 @@ const pricingCards = [
 				icon: <FaCheckCircle />,
 				title: "$1M-$1.5M / mo. monthly ad spend"
 			}
-		]
+		],
+
 	},
 ];
 
@@ -162,9 +165,24 @@ const Page: NextPage = () => {
 									))
 								}
 							</CardContent>
-							<CardFooter />
+							<div className="px-4 py-10 mt-4 flex items-center justify-center flex-col">
+								<p className="border-t border-[#000] w-full mt-1 mb-10 text-center"/>
+								<p className="mb-10">$3,125 INITIAL INVESTMENT</p>
+								<Button
+									bgColor="bg-[#000]" 
+									textColor="text-white" 
+									className="py-4 px-10 text-[-0.8em]">
+									Send Proposal
+								</Button>
+							</div>
 						</Card>
 					))}
+				</div>
+			</Section>
+			
+			<Section className="text-center pt-16">
+				<div className="flex py-2 space-y-9 justify-center">
+					<p className="flex text-4xl font-medium text-sky-500">See Full Deliverables<BsChevronRight className="ml-10"/></p>
 				</div>
 			</Section>
 		</div>

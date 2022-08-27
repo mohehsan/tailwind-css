@@ -138,11 +138,11 @@ const Page: NextPage = () => {
 
 			{/* pricing card section */}
 			<Section>
-				<div className="flex py-2 space-x-5">
+				<div className="flex flex-wrap lg:space-x-5 gap-10 lg:gap-0 justify-center">
 					{pricingCards.map((pricing, index) => (
 						<Card
 							key={index}
-							className="max-w-[400px] w-full border-black-70 border rounded-md">
+							className="max-w-[380px] w-full border-black-70 border rounded-md">
 							<CardHeader
 								rate={pricing.rate}
 								title={pricing.title}
@@ -179,9 +179,10 @@ const Page: NextPage = () => {
 					))}
 				</div>
 			</Section>
+			{/* end pricing section */}
 
-			<Section className="pt-16">
-				<div className="flex py-2 space-y-9 justify-center">
+			<Section className="flex flex-wrap justify-center pt-16">
+				<div className="flex py-2 space-y-9">
 					<p className="flex text-4xl font-medium text-sky-500">See Full Deliverables<BsChevronRight className="ml-10" /></p>
 				</div>
 			</Section>
@@ -246,7 +247,7 @@ const Page: NextPage = () => {
 				{/* table section */}
 			</Section>
 
-			<Section className="pt-20">
+			<Section className="flex flex-wrap pt-20">
 				<div className="justify-center">
 					<h1 className="mb-14 text-4xl text-center">Social media advertising services for every business</h1>
 					<p className="mb-7 text-xl text-center">MUSCLED offers custom social ad plans for ecommerce stores, enterprises, and direct to consumer (D2C) brands.</p>
@@ -254,54 +255,57 @@ const Page: NextPage = () => {
 				</div>
 			</Section>
 
-			<Section className="flex pt-20" >
-				{/* A */}
-				<div className="box-border h-[380px] w-[410px] ml-[25px] mr-10 bg-red-700 flex items-center flex-col">
-					<div className="px-6">
-						<p className="mt-8 text-3xl">Ecommerce Social Media Advertising</p>
-						<p className="my-5 text-xl">Drive traffic to your ecommerce store and start selling more online with social media ads.</p>
+			<Section className="pt-20" >
+				<div className="flex flex-wrap justify-center">
+					{/* A */}
+					<div className="box-border h-90 w-80 px-3 py-3">
+						<div className="flex items-center bg-red-700 flex-col py-3 px-3">
+							<div className="px-6 text-accent-white">
+								<p className="mt-8 text-3xl">Ecommerce Social Media Advertising</p>
+								<p className="my-5 text-xl">Drive traffic to your ecommerce store and start selling more online with social media ads.</p>
+							</div>
+							<Button
+								bgColor="bg-[#000]"
+								textColor="text-white"
+								className="mt-7 text-[-0.8em]">
+								LEARN MORE					
+							</Button>
+						</div>
 					</div>
-					<div>
-						<Button
-							bgColor="bg-[#000]"
-							textColor="text-white"
-							className="mt-7 text-[-0.8em]">
-							LEARN MORE					
-						</Button>
+					
+					{/* B */}
+					<div className="box-border h-90 w-80 px-3 py-3">
+						<div className="flex items-center bg-red-700 flex-col py-3 px-3">
+							<div className="px-6 text-accent-white">
+								<p className="mt-8 text-3xl">Enterprise Social Media Advertising</p>
+								<p className="my-5 text-xl">Turbocharge enterprise sales with social ads (for ad budgets above $10,000 per month).</p>
+							</div>
+							<Button
+								bgColor="bg-[#000]"
+								textColor="text-white"
+								className="mt-7 text-[-0.8em]">
+								LEARN MORE					
+							</Button>
+						</div>
 					</div>
-				</div>
-				
-				{/* B */}
-				<div className="box-border h-[380px] w-[410px] mx-10 mb-10 bg-red-700 flex items-center flex-col">
-				<div className="px-6">
-						<p className="mt-8 text-3xl">Enterprise Social Media Advertising</p>
-						<p className="my-5 text-xl">Turbocharge enterprise sales with social ads (for ad budgets above $10,000 per month).</p>
+					
+					{/* C */}
+					<div className="box-border h-90 w-80 px-3 py-3">
+						<div className="flex items-center bg-red-700 flex-col py-[14px] px-3">
+							<div className="px-6 text-accent-white">
+								<p className="mt-8 text-3xl">D2C Social Media Advertising</p>
+								<p className="my-5 text-xl">Attract, engage, and sell with custom social media ads for your business.</p>
+								<br></br>
+							</div>
+							<Button
+								bgColor="bg-[#000]"
+								textColor="text-white"
+								className="mt-7 text-[-0.8em]">
+								LEARN MORE					
+							</Button>
+						</div>
 					</div>
-					<div>
-						<Button
-							bgColor="bg-[#000]"
-							textColor="text-white"
-							className="mt-7 text-[-0.8em]">
-							LEARN MORE					
-						</Button>
-					</div>
-				</div>
-				
-				{/* C */}
-				<div className="box-border h-[380px] w-[410px] ml-10 mr-[25px] mb-10 bg-red-700 flex items-center flex-col">
-				<div className="px-6">
-						<p className="mt-8 text-3xl">D2C Social Media Advertising</p>
-						<p className="my-5 text-xl">Attract, engage, and sell with custom social media ads for your business.</p>
-					</div>
-					<div>
-						<Button
-							bgColor="bg-[#000]"
-							textColor="text-white"
-							className="mt-14 text-[-0.8em]">
-							LEARN MORE					
-						</Button>
-					</div>
-				</div>
+				</div>	
 			</Section>
 
 			<Section >

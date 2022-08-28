@@ -1,6 +1,6 @@
 import React, { ReactElement, ReactNode } from "react";
 import { NextPage } from "next";
-import { Hero, Section, Testimonial } from "components/Fawwaz/Sections";
+import { Footer, Hero, Section, Testimonial } from "components/Fawwaz/Sections";
 import SEOMarketingSVG from "../../components/assets/svg/SEOMarketingSVG";
 import Logo from "components/Fawwaz/Logo";
 import logo from "../../components/assets/logo/logo1.png";
@@ -118,6 +118,42 @@ const socialCards = [
 	},
 ];
 
+const turnFollowers = [
+	{
+		title: "Turn followers into customers with Muscled’s social media advertising",
+		description: {
+			one: "Every digital marketing strategy has to have social media, that means yours too.",
+			two: "With platforms like Facebook, LinkedIn, Twitter, Instagram, and even TikTok, your business can go to wherever it needs to, whether to boost your recruitment efforts, sales ventures, or customer loyalty incentives.",
+			three: "While social media marketing does help reach these goals, advertising kickstarts your efforts by adding more OOMPH to your company’s presence in social media platforms. With social media ads that hit the spot in targeting, messaging, and bidding, your enterprise business can get phenomenal results from social media.",
+			four: "At Muscled, our social media management team specializes in corporate-level social media advertising.",
+			five: "When you partner with our own social media experts, you get a complete social media advertising package. From curating your strategy to creating your ads to managing your campaigns, we cover everything in this aspect. Plus, we provide you with reports that are convenient and accurate.",
+			six: "If you want to learn how our Meta Business Partner agency can help bring more power to your brand — and why 91% of brands make us their long-term partner — contact us online or call us at ######## to speak with an experienced strategist!"
+		}
+	}
+];
+
+const connectTarget = [
+	{
+		title: "Reach out to networks that matter to your business, connect with your targets.",
+		description: {
+			one: "Platforms like Youtube, Facebook, Instagram and Twitter gives your business the opportunity to reach hundreds of millions of users, as well as powerful targeting options that help your business reach out to its target audience and have amazing returns on its ad spend.",
+			two: "With Muscled, your company gets has the chance to take advantage of all these platforms because we cover:",
+			three: "While our enterprise social media advertising service plans include a recommended number of networks, you have the choice to advertise on however many you prefer, like four platforms instead of two."
+		}
+
+	}
+];
+
+const platform = [
+	"Facebook",
+	"Instagram",
+	"Twitter",
+	"Pinterest",
+	"Snapchat",
+	"YouTube",
+	"LinkedIn"
+];
+
 const learnMore = [
 	"9 Popular Social Messaging Apps For Your Business",
 	"9 Tips To Help You Nail Your Social Commerce Plan",
@@ -139,6 +175,42 @@ const learnMore = [
 	"What Are Social Media KPIs?",
 	"32 Reasons Why Social Media Marketing Is Important",
 	"How Much Does Facebook Advertising Cost?"
+];
+
+const What = [
+	{
+		title: "So, what do you get when you choose to partner with us? Practically everything.",
+		description: {
+			one: "So, why did you decide to invest in social media marketing services?",
+			two: "You might have probably thought do so because you want to:",
+			three: "At Muscled, we recognize these goals, as well as the value you want to see in outsourcing your enterprise social media advertising. That’s why our services provide a complete package for advertising on social media.",
+			four: "For example, Muscled’s social media advertising plans include:",
+			five: "As your business social media advertising partner, we provide you with a solution that actually works. Whether you’re looking to reach out on TikTok,Twitter, Instagram, or another social media network, we will take care of your advertising campaign so your company can optimize its time and resources while achieving an impressive return on investment (ROI)."
+		}
+	}
+];
+
+const So = [
+	"<li>Save in-house team members’ time",
+	"Improve returns from advertising on social media",
+	"Boost social media advertising initiatives",
+	"Get a better social media advertising strategy",
+	"Access industry-leading experts",
+	"Optimize internal marketing costs",
+	"And more"
+];
+
+const Example = [
+	"Dedicated account manager, plus a team of platform-specific specialists",
+	"Social advertising audit",
+	"Social advertising strategy recommendations and/or development",
+	"Social media ad creatives",
+	"Network tracking pixel installation",
+	"Daily account monitoring",
+	"Weekly ad creative analysis and optimization",
+	"Monthly ad audience analysis and optimization",
+	"Customized reports",
+	"Monthly reporting"
 ];
 
 const builtIdentity = [
@@ -179,7 +251,7 @@ const earnCustomer = [
 			two: "For brands today, it’s critical to earn and maintain a customer’s loyalty to your brand. When you have customers loyal to your brand and business, these same customer’s will attract others into becoming your customer too. In fact, 80% of people get advice about their next purchase from social media",
 			three: "Building a smart and competitive social media ad campaign strategy and being able to pull it off can help your company engage with these brand advocates consistently, which can keep your business top-of-mind. Plus, having these brand advocates as followers can increase engagement and even shares for organic posts."
 		}
-	}	
+	}
 ];
 
 const improveBussiness = [
@@ -190,7 +262,7 @@ const improveBussiness = [
 			two: "From boosting your conversion rates to cutting down on costs per click(CPC),  working with an experienced agency like Muscled can help your business get returns from advertising on social media platforms like LinkedIn, Facebook, and Pinterest.",
 			three: "The best part is that your business improves its ROI without the unnecessarily high costs of expanding your internal marketing team. With our business social media advertising management services, you get an entire social media team instantly, which let’s you focus on other areas of your business entirely."
 		}
-	}	
+	}
 ];
 
 const increase = [
@@ -201,7 +273,7 @@ const increase = [
 			two: "The installation of tracking pixels, like from Facebook and LinkedIn, allows your business to initiate remarketing campaigns on these social media platforms.Whenever someone visits your website while logged into their Facebook account, for example, you have the ability to remarket to them on Facebook later.",
 			three: "With  Muscled, your business can earn from this social media advertising benefit. Our team will set up the tracking pixels, curate the campaigns, and construct the ads so you can start earning off the missed revenue."
 		}
-	}	
+	}
 ];
 
 const Why = [
@@ -255,14 +327,14 @@ const PartnerList = [
 
 const FAQs = [
 	{
-	title: "FAQs about enterprise social media advertising services",
-	description: {
-		one: "Looking to learn more about our enterprise social media advertising services? Read our FAQ:",
-		two: "What are enterprise social media advertising services?",
-		three: "Enterprise social media advertising services use social media ads to promote enterprise organizations on networks like Facebook, Instagram, LinkedIn, and Twitter. Enterprises use social media advertising to build brand awareness, attract followers, reduce client churn, and drive revenue.",
-		four: "So, how much does Social Media Advertising Services cost anyway?",
-		five: "Services like these and how much they cost depends on a few factors, such as the strategy, ad spend and the agency they partner up with. Typically, enterprises will invest $450 to more than $6000 into social media advertising each month."
-	}
+		title: "FAQs about enterprise social media advertising services",
+		description: {
+			one: "Looking to learn more about our enterprise social media advertising services? Read our FAQ:",
+			two: "What are enterprise social media advertising services?",
+			three: "Enterprise social media advertising services use social media ads to promote enterprise organizations on networks like Facebook, Instagram, LinkedIn, and Twitter. Enterprises use social media advertising to build brand awareness, attract followers, reduce client churn, and drive revenue.",
+			four: "So, how much does Social Media Advertising Services cost anyway?",
+			five: "Services like these and how much they cost depends on a few factors, such as the strategy, ad spend and the agency they partner up with. Typically, enterprises will invest $450 to more than $6000 into social media advertising each month."
+		}
 	}
 ]
 
@@ -275,6 +347,13 @@ const moreFollower = [
 		}
 	}
 ]
+
+const last = [
+	{
+		title: "Social Media Services",
+	}
+
+];
 
 const Page: NextPage = () => {
 	return (
@@ -320,7 +399,7 @@ const Page: NextPage = () => {
 								}>
 								<div className="flex">
 									{pricing.star.map(
-										(Component, key): JSX.Element => <Component key={key} className="card-icon fill-black-50"/>
+										(Component, key): JSX.Element => <Component key={key} className="card-icon fill-black-50" />
 									)}
 								</div>
 							</CardHeader>
@@ -362,60 +441,22 @@ const Page: NextPage = () => {
 			</Section>
 
 			<Section className="pt-16">
-				<div className="flex py-2 space-y-16 justify-center flex-col">
-					<h1 className="text-4xl text-justify">
-						Turn followers into customers with Muscled’s social
-						media advertising
-					</h1>
-					<div className="text-justify text-xl">
-						<p className="mb-14">
-							Every digital marketing strategy has to have social
-							media, that means yours too.
-						</p>
-						<p className="mb-6">
-							With platforms like Facebook, LinkedIn, Twitter,
-							Instagram, and even TikTok, your business can go to
-							wherever it needs to, whether to boost your
-							recruitment efforts, sales ventures, or customer
-							loyalty incentives.
-						</p>
-						<p className="mb-6">
-							While{" "}
-							<a href="" className="text-sky-400">
-								social media marketing
-							</a>{" "}
-							does help reach these goals, advertising kickstarts
-							your efforts by adding more OOMPH to your company’s
-							presence in social media platforms. With social
-							media ads that hit the spot in targeting, messaging,
-							and bidding, your enterprise business can get
-							phenomenal results from social media.
-						</p>
-						<p className="mb-6">
-							At Muscled, our social media management team
-							specializes in corporate-level social media
-							advertising.
-						</p>
-						<p className="mb-14">
-							When you partner with our own social media experts,
-							you get a complete social media advertising package.
-							From curating your strategy to creating your ads to
-							managing your campaigns, we cover everything in this
-							aspect. Plus, we provide you with reports that are
-							convenient and accurate.
-						</p>
-						<p>
-							If you want to learn how our Meta Business Partner
-							agency can help bring more power to your brand — and
-							why 91% of brands make us their long-term partner —{" "}
-							<a href="" className="text-sky-400">
-								contact us online
-							</a>{" "}
-							or call us at ######## to speak with an experienced
-							strategist!
-						</p>
+
+				{turnFollowers.map((content, key) => (
+					<div key={key} className="flex py-2 space-y-16 justify-center flex-col">
+						<h1 className="text-4xl text-justify">{content.title}</h1>
+						<div className="text-justify text-xl">
+							<p className="my-12">{content.description.one}</p>
+							<p className="my-3">{content.description.two}</p>
+							<p className="my-3">{content.description.three}</p>
+							<p className="my-3">{content.description.four}</p>
+							<p className="my-3">{content.description.five}</p>
+							<p className="my-12">{content.description.six}</p>
+						</div>
 					</div>
-				</div>
+				))
+				}
+
 			</Section>
 
 			<div className="pt-32">
@@ -423,43 +464,25 @@ const Page: NextPage = () => {
 			</div>
 
 			<Section className="pt-32">
-				<div className=" py-2 space-y-16 justify-center">
-					<h1 className="flex text-4xl text-justify">
-						Reach out to networks that matter to your business,
-						connect with your targets.
-					</h1>
-					<div className="text-justify text-xl">
-						<p className="mb-5">
-							Platforms like Youtube, Facebook, Instagram and
-							Twitter gives your business the opportunity to reach
-							hundreds of millions of users, as well as powerful
-							targeting options that help your business reach out
-							to its target audience and have amazing returns on
-							its ad spend.
-						</p>
-						<p className="mb-5">
-							With Muscled, your company gets has the chance to
-							take advantage of all these platforms because we
-							cover:
-						</p>
-						<ul className="list-disc pl-8 mb-5">
-							<li>Facebook</li>
-							<li>Instagram</li>
-							<li>Twitter</li>
-							<li>Pinterest</li>
-							<li>Snapchat</li>
-							<li>YouTube</li>
-							<li>LinkedIn</li>
-						</ul>
-						<p>
-							While our enterprise social media advertising
-							service plans include a recommended number of
-							networks, you have the choice to advertise on
-							however many you prefer, like four platforms instead
-							of two.
-						</p>
+				{connectTarget.map((content, key) => (
+					<div key={key} className="py-2 space-y-16 justify-center">
+						<h1 className="flex text-4xl text-justify">{content.title}</h1>
+						<div className="text-justify text-xl">
+							<p className="mb-5">{content.description.one}</p>
+							<p className="mb-5">{content.description.two}</p>
+							<ul className="list-disc pl-8 mb-5">
+								{
+									platform.map((item, key) => (
+										<li key={key}>{item}</li>
+									))
+								}
+							</ul>
+							<p>{content.description.three}</p>
+						</div>
 					</div>
-				</div>
+				))
+				}
+
 			</Section>
 
 			<Section className="pt-36">
@@ -511,167 +534,6 @@ const Page: NextPage = () => {
 			</Section>
 
 			<Section className="pt-32 grid grid-cols-1 lg:grid-cols-5 gap-3">
-				<div className="col-span-3 order-2 lg:order-2 lg:col-span-3 ml-0 my-10 lg:ml-10 lg:my-0">
-					<div className="">	
-						<div>
-							<h1 className="text-[40px] mb-16">
-							So, what do you get when you choose to partner with us? Practically everything.
-							</h1>
-						</div>
-						<div className="text-xl">
-							<p>
-							So, why did you decide to invest in social media marketing services?</p>
-							<p>You might have probably thought do so because you want to:</p>
-							<ul className="my-8 ml-10 list-disc">
-								<li>Save in-house team members’ time</li>
-								<li>Improve returns from advertising on social media</li>
-								<li>Boost social media advertising initiatives</li>
-								<li>Get a better social media advertising strategy</li>
-								<li>Access industry-leading experts</li>
-								<li>Optimize internal marketing costs</li>
-								<li>And more</li>
-							</ul>
-							<p className="my-8">At Muscled, we recognize these goals, as well as the value you want to see in outsourcing your enterprise social media advertising. That’s why our services provide a complete package for advertising on social media.</p>
-							<p>For example, Muscled’s social media advertising plans include:</p>
-							<ul className="my-8 ml-10 list-disc">
-								<li>Dedicated account manager, plus a team of platform-specific specialists</li>
-								<li>Social advertising audit</li>
-								<li>Social advertising strategy recommendations and/or development</li>
-								<li>Social media ad creatives</li>
-								<li>Network tracking pixel installation</li>
-								<li>Daily account monitoring</li>
-								<li>Weekly ad creative analysis and optimization</li>
-								<li>Monthly ad audience analysis and optimization</li>
-								<li>Customized reports</li>
-								<li>Monthly reporting</li>
-							</ul>
-							<p>As your business social media advertising partner, we provide you with a solution that actually works. Whether you’re looking to reach out on TikTok,Twitter, Instagram, or another social media network, we will take care of your advertising campaign so your company can optimize its time and resources while achieving an impressive return on investment (ROI).
-							</p>	
-						</div>
-
-						<img src="https://picsum.photos/200" alt="" className="w-[760px] h-[525px] mt-40 mb-20" />
-
-						{How.map((content, key) => (
-								<div key={key}>
-									<h1 className="text-[40px] mb-16">{content.title}</h1>
-									<p className="text-xl">{content.description}</p>
-								</div>
-							))}
-						
-						{builtIdentity.map((content, key) => (
-								<div key={key} className="text-xl">
-									<h1 className="my-12">{content.title}</h1>
-									<p className="my-4">{content.description.one}</p>
-									<p className="my-4">{content.description.two}</p>
-									<p className="my-4">{content.description.three}</p>
-								</div>
-							))}
-
-						{generateSales.map((content, key) => (
-								<div key={key} className="text-xl">
-									<h1 className="my-12">{content.title}</h1>
-									<p className="my-4">{content.description.one}</p>
-									<p className="my-4">{content.description.two}</p>
-									<p className="my-4">{content.description.three}</p>
-									<p className="my-4">{content.description.four}</p>
-								</div>
-							))}
-					
-						{earnCustomer.map((content, key) => (
-								<div key={key} className="text-xl">
-									<h1 className="my-12">{content.title}</h1>
-									<p className="my-4">{content.description.one}</p>
-									<p className="my-4">{content.description.two}</p>
-									<p className="my-4">{content.description.three}</p>
-								</div>
-							))}
-					
-						{improveBussiness.map((content, key) => (
-								<div key={key} className="text-xl">
-									<h1 className="my-12">{content.title}</h1>
-									<p className="my-4">{content.description.one}</p>
-									<p className="my-4">{content.description.two}</p>
-									<p className="my-4">{content.description.three}</p>
-								</div>
-							))}
-						
-						{increase.map((content, key) => (
-								<div key={key} className="text-xl">
-									<h1 className="my-12">{content.title}</h1>
-									<p className="my-4">{content.description.one}</p>
-									<p className="my-4">{content.description.two}</p>
-									<p className="my-4">{content.description.three}</p>
-								</div>
-							))}
-
-						<img src="https://picsum.photos/210" alt="" className="w-[760px] h-[525px] mt-40 mb-20" />
-						
-						{Why.map((content, key) => (
-								<div key={key}>
-									<h1 className="text-[40px] mb-16">{content.title}</h1>
-									<p className="text-xl">{content.description}</p>
-								</div>
-							))}
-
-						{onePartner.map((content, key) => (
-								<div key={key} className="text-xl">
-									<h1 className="my-12">{content.title}</h1>
-									<p className="my-4">{content.description.one}</p>
-									<p className="my-4">{content.description.two}</p>
-									<p className="my-4">{content.description.three}</p>
-									<p className="my-4">{content.description.four}</p>
-									<p className="my-4">{content.description.five}</p>
-								</div>
-							))}	
-
-						{allrounderTeam.map((content, key) => (
-								<div key={key} className="text-xl">
-									<h1 className="my-12">{content.title}</h1>
-									<p className="my-4">{content.description.one}</p>
-									<p className="my-4">{content.description.two}</p>
-									<p className="my-4">{content.description.three}</p>
-								</div>
-							))}
-
-						{PartnerAgency.map((content, key) => (
-							<div key={key} className="text-xl">
-								<h1 className="my-12">{content.title}</h1>
-								<p className="mb-4 mt 8">{content.description.one}</p>
-								<p className="my-4">{content.description.two}</p>
-								<p className="my-4">{content.description.three}</p>
-								<ul className="my-4 ml-10 list-disc">
-									{PartnerList.map((item, key) => (
-											<li key={key}>{item}</li>
-										))}
-								</ul>
-								<p className="my-4">{content.description.four}</p>
-							</div>
-						))}
-
-						{FAQs.map((content, key) => (
-								<div key={key}>
-									<h1 className="text-[40px] mt-20 mb-16">{content.title}</h1>
-									<div className="text-xl">	
-										<p className="my-4">{content.description.one}</p>
-										<h1 className="my-12">{content.description.two}</h1>
-										<p className="my-4">{content.description.three}</p>
-										<h1 className="my-12">{content.description.four}</h1>
-										<p className="my-4">{content.description.five}</p>
-									</div>
-								</div>
-							))}
-
-						{moreFollower.map((content, key) => (
-								<div key={key}>
-									<h1 className="text-[40px] mt-20 mb-16">{content.title}</h1>
-									<div className="text-xl">
-										<p className="my-4">{content.description.one}</p>
-										<p className="my-4">{content.description.two}</p>
-									</div>
-								</div>	
-							))}
-					</div>	
-				</div>
 				<div className="order-1 col-span-1 lg:order-2 lg:col-span-2 lg:ml-auto md:w-full lg:max-w-[400px]">
 					<TableOfContent />
 					<div className="mt-16">
@@ -685,7 +547,178 @@ const Page: NextPage = () => {
 						</ul>
 					</div>
 				</div>
+
+				<div className="col-span-3 order-2 lg:order-1 lg:col-span-3 ml-0 my-10 lg:ml-10 lg:my-0">
+					<div className="">
+						{What.map((content, key) => (
+							<div key={key}>
+								<h1 className="text-[40px] mb-16">{content.title}</h1>
+								<div className="text-xl">
+									<p>{content.description.one}</p>
+									<p>{content.description.two}</p>
+									<ul className="my-8 ml-10 list-disc">
+										{
+											So.map((item, key) => (
+												<li key={key}>{item}</li>
+											))
+										}
+									</ul>
+									<p className="my-8">{content.description.three}</p>
+									<p>{content.description.four}</p>
+									<ul className="my-8 ml-10 list-disc">
+										{
+											Example.map((item, key) => (
+												<li key={key}>{item}</li>
+											))
+										}
+									</ul>
+									<p>{content.description.five}</p>
+								</div>
+							</div>
+						))}
+
+						<img src="https://picsum.photos/200" alt="" className="w-[760px] h-[525px] mt-40 mb-20" />
+
+						{How.map((content, key) => (
+							<div key={key}>
+								<h1 className="text-[40px] mb-16">{content.title}</h1>
+								<p className="text-xl">{content.description}</p>
+							</div>
+						))}
+
+						{builtIdentity.map((content, key) => (
+							<div key={key} className="text-xl">
+								<h1 className="my-12">{content.title}</h1>
+								<p className="my-4">{content.description.one}</p>
+								<p className="my-4">{content.description.two}</p>
+								<p className="my-4">{content.description.three}</p>
+							</div>
+						))}
+
+						{generateSales.map((content, key) => (
+							<div key={key} className="text-xl">
+								<h1 className="my-12">{content.title}</h1>
+								<p className="my-4">{content.description.one}</p>
+								<p className="my-4">{content.description.two}</p>
+								<p className="my-4">{content.description.three}</p>
+								<p className="my-4">{content.description.four}</p>
+							</div>
+						))}
+
+						{earnCustomer.map((content, key) => (
+							<div key={key} className="text-xl">
+								<h1 className="my-12">{content.title}</h1>
+								<p className="my-4">{content.description.one}</p>
+								<p className="my-4">{content.description.two}</p>
+								<p className="my-4">{content.description.three}</p>
+							</div>
+						))}
+
+						{improveBussiness.map((content, key) => (
+							<div key={key} className="text-xl">
+								<h1 className="my-12">{content.title}</h1>
+								<p className="my-4">{content.description.one}</p>
+								<p className="my-4">{content.description.two}</p>
+								<p className="my-4">{content.description.three}</p>
+							</div>
+						))}
+
+						{increase.map((content, key) => (
+							<div key={key} className="text-xl">
+								<h1 className="my-12">{content.title}</h1>
+								<p className="my-4">{content.description.one}</p>
+								<p className="my-4">{content.description.two}</p>
+								<p className="my-4">{content.description.three}</p>
+							</div>
+						))}
+
+						<img src="https://picsum.photos/210" alt="" className="w-[760px] h-[525px] mt-40 mb-20" />
+
+						{Why.map((content, key) => (
+							<div key={key}>
+								<h1 className="text-[40px] mb-16">{content.title}</h1>
+								<p className="text-xl">{content.description}</p>
+							</div>
+						))}
+
+						{onePartner.map((content, key) => (
+							<div key={key} className="text-xl">
+								<h1 className="my-12">{content.title}</h1>
+								<p className="my-4">{content.description.one}</p>
+								<p className="my-4">{content.description.two}</p>
+								<p className="my-4">{content.description.three}</p>
+								<p className="my-4">{content.description.four}</p>
+								<p className="my-4">{content.description.five}</p>
+							</div>
+						))}
+
+						{allrounderTeam.map((content, key) => (
+							<div key={key} className="text-xl">
+								<h1 className="my-12">{content.title}</h1>
+								<p className="my-4">{content.description.one}</p>
+								<p className="my-4">{content.description.two}</p>
+								<p className="my-4">{content.description.three}</p>
+							</div>
+						))}
+
+						{PartnerAgency.map((content, key) => (
+							<div key={key} className="text-xl">
+								<h1 className="my-12">{content.title}</h1>
+								<p className="mb-4 mt 8">{content.description.one}</p>
+								<p className="my-4">{content.description.two}</p>
+								<p className="my-4">{content.description.three}</p>
+								<ul className="my-4 ml-10 list-disc">
+									{PartnerList.map((item, key) => (
+										<li key={key}>{item}</li>
+									))}
+								</ul>
+								<p className="my-4">{content.description.four}</p>
+							</div>
+						))}
+
+						{FAQs.map((content, key) => (
+							<div key={key}>
+								<h1 className="text-[40px] mt-20 mb-16">{content.title}</h1>
+								<div className="text-xl">
+									<p className="my-4">{content.description.one}</p>
+									<h1 className="my-12">{content.description.two}</h1>
+									<p className="my-4">{content.description.three}</p>
+									<h1 className="my-12">{content.description.four}</h1>
+									<p className="my-4">{content.description.five}</p>
+								</div>
+							</div>
+						))}
+
+						{moreFollower.map((content, key) => (
+							<div key={key}>
+								<h1 className="text-[40px] mt-20 mb-16">{content.title}</h1>
+								<div className="text-xl">
+									<p className="my-4">{content.description.one}</p>
+									<p className="my-4">{content.description.two}</p>
+								</div>
+							</div>
+						))}
+					</div>
+
+					<div className="mt-28 max-w-[650px] w-auto bg-sky-800 text-white p-12 space-y-5">
+						<p className="font-bold text-3xl">For verified ratings of our marketing services,please read our:</p>
+						<div className="flex">
+							<AiFillStar className="fill-yellow-400 text-3xl" />
+							<AiFillStar className="fill-yellow-400 text-3xl" />
+							<AiFillStar className="fill-yellow-400 text-3xl" />
+							<AiFillStar className="fill-yellow-400 text-3xl" />
+							<AiFillStar className="fill-yellow-400 text-3xl" />
+						</div>
+						<div className="text-[#D2D2D2] flex items-center">
+							<p>INDUSTRY-LEADING 863 TESTIMONIALS</p>
+							<BsChevronRight className="ml-8"/>
+						</div>
+						<p className="text-[#D2D2D2]">MUSCLED Agency Rating 4.9 out of 5 with 267 ratings</p>
+					</div>
+				</div>
 			</Section>
+
+			<Footer />
 		</div>
 	);
 };

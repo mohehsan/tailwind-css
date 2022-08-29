@@ -278,8 +278,8 @@ const Page: NextPage = () => {
 					</p>
 				</div>
 
-				<div>
-					<Table className="table-fixed">
+				<div className="relative overflow-x-scroll">
+					<Table>
 						<thead>
 							<tr>
 								<Th

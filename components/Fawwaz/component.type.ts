@@ -55,7 +55,7 @@ export interface TableProps {
 }
 
 export interface TableHeadChildProps {
-	content: string | JSX.Element;
+	content: string | JSX.Element | ReactNode;
 	className?: string;
 }
 
@@ -79,7 +79,7 @@ export interface HeroSectionProps {
 	pagination?: JSX.Element;
 	title: string;
 	description: string;
-	heroSVG?: JSX.Element;
+	heroSVG?: JSX.Element | ReactNode;
 	input?:boolean;
 }
 
